@@ -148,7 +148,6 @@ cd $HOME
 touch .gitignore_global
 echo .exe >> $HOME/.gitignore_global
 echo .pyc >> $HOME/.gitignore_global
-echo .pyc >> $HOME/.gitignore_global
 echo docs/ >> $HOME/.gitignore_global
 git config --global core.excludefiles $HOME/.gitignore_global
 ```
