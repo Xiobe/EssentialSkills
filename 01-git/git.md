@@ -1,6 +1,6 @@
 # Version Control Systems
 ## All is Code
-An important part of a computer system is its configuration and its applications. Applications are compiled from source files and read configuration files. Over time these file tend to change because we want to use the computer system in a different way.
+An important part of a computer system is its configuration and its applications. Applications are compiled from source files and read out their configuration files. Over time these file tend to change because we want to use the computer system in a different way.
 
 ## Centralized vs Decentralized Versioning
 Git is decentralized versioning system. The difference with a centralized versioning system is thus that you have a copy of the complete repository on your system.
