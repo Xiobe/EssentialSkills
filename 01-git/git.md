@@ -3,7 +3,7 @@
 An important part of a computer system is its configuration and its applications. Applications are compiled from source files and read out their configuration files. Over time these file tend to change because we want to use the computer system in a different way.
 
 ## Centralized vs Decentralized Versioning
-Git is decentralized versioning system. The difference with a centralized versioning system is that you have a copy of the complete repository on your local system.
+Git is a decentralized versioning system. The difference with a centralized versioning system is that you have a copy of the complete repository on your local system.
 
 This also means you are personally responsible to synchronize your local repository with the centralized one.
 
