@@ -34,3 +34,10 @@ HRNGDEVICE=/dev/urandom
 sudo service rng-tools restart
 ```
 
+# Key Management
+## Key Generation
+```
+gpg --gen-key
+```
+Choose a RSA/RSA key with a 4096 bits key size that expires yearly. This means every year you will need to do a key roll over.
+
