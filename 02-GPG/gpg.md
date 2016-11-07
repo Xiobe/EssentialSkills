@@ -41,3 +41,4 @@ gpg --gen-key
 ```
 Choose a RSA/RSA key with a 4096 bits key size that expires yearly. This means every year you will need to do a key roll over.
 
+To make this tutorial we have made a key that only exists on the local system and lives for one day.
