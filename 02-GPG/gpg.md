@@ -71,3 +71,13 @@ uid                tester test <tester@test.org>
 sub 2048R/C779FA1A 2016-11-07
 ```
 The keyID in our example is 0896706 for the public ket and C779FA1A for the private key.
+
+## Changing your password
+```
+gpg --edit-key KeyID
+```
+You will be greeted by the gpg prompt and type password
+```
+gpg> password
+```
+Now you will be prompted to enter the old password, then choose a new password and type quit to exit.
