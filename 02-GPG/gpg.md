@@ -102,4 +102,8 @@ gpg --import public.key
 ```
 gpg --allow-secret-key-import --import private.key
 ```
+## Delete Public Key
+```
+gpg --delete-key "user"
+```
 
