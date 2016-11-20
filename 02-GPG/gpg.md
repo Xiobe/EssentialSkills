@@ -238,3 +238,10 @@ Asymmetric encryption means that only the destinee can read the datam not even t
 ```
 gpg -e -u SenderPublicKeyID -r ReceiverPublicKeyID -o file.txt.gpg file.txt
 ```
+
+# Decryption of Data
+## Symmetric Decryption
+```
+gpg -o file.txt -d file.txt.gpg
+```
+This will produce the file file.txt when you introduce the right password.
