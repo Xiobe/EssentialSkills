@@ -57,3 +57,19 @@ uid               tester test <tester@test.org>
 sub 2048R/C779FA1A 2016-11-07 [expires 2016-11-08]
 ```
 
+## List Private Key Ring
+```
+gpg --list-secret-keys
+```
+By default the private keyring is stored in ~/.gnupg/secring.gpg
+Example:
+```
+/home/user/.gnupg/secring.gpg
+-----------------------------
+sec 2048R/08096706 2016-11-07 [expires: 2016-11-08]
+uid                tester test <tester@test.org>
+sub 2048R/C779FA1A 2016-11-07
+
+The keyID in our example is 0896706 for the public ket and C779FA1A for the private key.
+
+
