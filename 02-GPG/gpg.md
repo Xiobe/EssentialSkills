@@ -197,3 +197,9 @@ gpg --import public.key
 gpg --sign-key --ask-cert-level PublicKeyID
 ```
 
+## Provide the signed key back
+Once you have signed they keym it needs to be provided back to the owner.
+```
+gpg -a --export TheirPublicKey > TheirPublicKey.key
+```
+Provide the TheirPublicKey.key file back to the owner.
