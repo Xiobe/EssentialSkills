@@ -129,4 +129,33 @@ This revokes the key locally but you still need to make the rest of the world aw
 ```
 gpg --keyserver pgp.mit.edu --send-keys keyID
 ```
+## Key Roll Over
+```
+gpg --edit-key YourPublicKeyID
+```
+This give you a gpg prompt, when you type list you will see the public key and its sub key.
+```
+gpg>list
+```
+By default no subkey is selected and thus you will be working on the primary key. If you wish to switch to the subkey you can invoke the key command. You pass the key command the index of the key you want to edit. If you don't pass key an index the primary key is assumed.
+```
+gpg> key index
+```
+If a subkey is selected you will see a little * next to the sub. Next we need to set the expiration date for both keys separately. It is perfectly possible for a pub key and a sub key to have a different expiration date.
 
+To set a new expiration date you use the command expire and set its new date.
+```
+gpg> expire
+```
+
+Once you have set both expiration dates you need to save your changes.
+```
+gpg> save
+```
+
+Finally you need to reupload the keys again
+```
+gpg --keyserver pgp.mit.edu --send-keys PublicKeyID
+```
+
+You might notice that when you list your private key your sub key actually doesn't have an expiration date. This makes sense since they are not meant to be distributed.
