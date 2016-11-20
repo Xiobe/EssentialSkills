@@ -162,3 +162,9 @@ You might notice that when you list your private key your sub key actually doesn
 
 # Key Signing
 A key is easily generated and only worth the trust you put into it. To increase the trust in a key it can be signed by a third party that did a check that the key you claim to own is actually yours.
+
+## Generating a key fingerprint
+Instead of checking a complete key, you can give out a fingerprint of your key.
+```
+gpg --fingerprint > fingerprint
+```
