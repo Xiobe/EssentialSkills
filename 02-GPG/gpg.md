@@ -318,3 +318,17 @@ killall -q gpg-agent
 eval $(gpg-agent --daemon)
 export GPGKEY=YourPublicKeyID
 ```
+
+## Keybase
+Keybase is a solution to present ifentity as a series of statements. These statements are like:
+* i own the twitter account @evanderhasselt
+* i own this laptop
+* i own this phone
+* i own this tablet
+* i don't own this phone anymore, it got stolen
+
+The idea is to havea public repository of your public accounts. You have a public profile that allows you to tell which accounts are yours and so when somebody creates an account to impersonate you it is quite easy to tell that that account doesn't belong to you.
+
+You can thus publish your gpg key easily.
+
+https://keybase.io
