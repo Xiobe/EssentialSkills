@@ -81,3 +81,10 @@ You will be greeted by the gpg prompt and type password
 gpg> password
 ```
 Now you will be prompted to enter the old password, then choose a new password and type quit to exit.
+
+## Public Key Export
+```
+gpg --export -a KeyID > public.key
+```
+This exports a key to the file public.key.
+
