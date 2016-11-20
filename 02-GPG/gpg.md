@@ -270,3 +270,38 @@ It is also possible to encrypt asymmetrically and sign the data
 ```
 gpg -e -u SenderPublicKeyID -r ReceiverPublicKeyID --sign -o file.txt.gpg file.txt
 ```
+
+# Daily Use
+## Checking a Linux Distro
+Linux distributions need to be provided with a signature. In the past it was the case that they were provided with an MD5 hash but this only provided a guarantee that the ISO was completely downloaded. It has happened that the doenload servers got hacked and an altered versio was offered for download together with an altered MD5 hash.
+
+By signing the ISO file the problem is different, the threat agent need the private key and the password besides access to the server. The person that downloads the ISO only needs the public key, the signature file and the ISO file.
+
+The example underneath is an example for Tails, a distro that specializes in TOR communication.
+
+Download the ISO, the signature file and the key:
+```
+wget http://ftp.free.fr/mirrors/tails.boum.org/tails/stable/tails-i386-2.5/tails-i386-2.5.iso
+wget https://tails.boum.org/torrents/files/tails-i386-2.5.iso.sig
+wget https://tails.boum.org/tails-signing.key
+```
+
+The key only needs to be imported once, if you have it already you don't need to do this a second time
+```
+gpg --import tails-signing.key
+```
+
+Now it is time to verify the download
+```
+gpg --keyid-format 0xlong --verify tails-i386-2.5.iso.sig  tails-i386-2.5.iso
+```
+
+It should output this:
+```
+gpg: Signature made Sun 31 Jul 2016 08:21:52 PM CEST
+gpg: using RSA key 0x3C83DCB52F699C56
+gpg: Good signature from "Tails developers (offline long-term identity key) <tails@boum.org>" [full]
+gpg: aka "Tails developers <tails@boum.org>" [full]
+Primary key fingerprint: A490 D0F4 D311 A415 3E2B  B7CA DBB8 02B2 58AC D84F
+Subkey fingerprint: A509 1F72 C746 BA6B 163D  1C18 3C83 DCB5 2F69 9C56
+```
