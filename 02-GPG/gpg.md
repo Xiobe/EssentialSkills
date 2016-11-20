@@ -159,3 +159,6 @@ gpg --keyserver pgp.mit.edu --send-keys PublicKeyID
 ```
 
 You might notice that when you list your private key your sub key actually doesn't have an expiration date. This makes sense since they are not meant to be distributed.
+
+# Key Signing
+A key is easily generated and only worth the trust you put into it. To increase the trust in a key it can be signed by a third party that did a check that the key you claim to own is actually yours.
