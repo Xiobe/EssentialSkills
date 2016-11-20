@@ -168,3 +168,12 @@ Instead of checking a complete key, you can give out a fingerprint of your key.
 ```
 gpg --fingerprint > fingerprint
 ```
+
+## Identity Verification
+Before you sign a key you need to verify the identity of the person. This is the procedure to check identities:
+1. You look up the fingerprint for the public key on http://pgp.mit.edu/ and write it down on the paper you take along to the meeting.
+2. The person that you will meet needs to do the same.
+3. At the meeting both verify if the fingerprints of the public keys match up.
+4. Check 2 pieces of identification with photo ID.
+
+Understand that this system is not fool-proof and it is better to know at least 2 persons who can vouch for somebody.
