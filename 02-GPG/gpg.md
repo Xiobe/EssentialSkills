@@ -305,3 +305,16 @@ gpg: aka "Tails developers <tails@boum.org>" [full]
 Primary key fingerprint: A490 D0F4 D311 A415 3E2B  B7CA DBB8 02B2 58AC D84F
 Subkey fingerprint: A509 1F72 C746 BA6B 163D  1C18 3C83 DCB5 2F69 9C56
 ```
+
+## Linux
+You can set your key as default in your ~/.bash_profile by doing
+```
+export GPGKEY=YourPublicKeyID
+```
+
+Next you will have to restart the gpg-agent
+```
+killall -q gpg-agent
+eval $(gpg-agent --daemon)
+export GPGKEY=YourPublicKeyID
+```
