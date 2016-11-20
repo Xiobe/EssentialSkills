@@ -177,3 +177,18 @@ Before you sign a key you need to verify the identity of the person. This is the
 4. Check 2 pieces of identification with photo ID.
 
 Understand that this system is not fool-proof and it is better to know at least 2 persons who can vouch for somebody.
+
+## Import their key
+Search by email on the public key server
+```
+gpg --search-keys email_address
+```
+Request by Public Key from a public key server the keys
+```
+gpg --recv-keys PublicKeyID
+```
+Import the key from file
+```
+gpg --import public.key
+```
+
