@@ -42,3 +42,18 @@ gpg --gen-key
 Choose a RSA/RSA key with a 4096 bits key size that expires yearly. This means every year you will need to do a key roll over.
 
 To make this tutorial we have made a key that only exists on the local system and lives for one day.
+
+## List Public Key Ring
+```
+gpg --list-keys
+```
+To check out which keys are known to the system you can list the public key ring. By default the public keyring is stored in ~/.gnupg/pubring.gpg.
+Example:
+```
+/home/user/.gnupg/pubring.gpg
+-----------------------------
+pub 2048/08096706 2016-11-07 [expires 2016-11-08]
+uid               tester test <tester@test.org>
+sub 2048R/C779FA1A 2016-11-07 [expires 2016-11-08]
+```
+
