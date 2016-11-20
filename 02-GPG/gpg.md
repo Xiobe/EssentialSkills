@@ -115,3 +115,10 @@ gpg --delete-secret-key "user"
 gpg --keyserver pgp.mit.edu --send-keys PublicKeyID
 ```
 This will send your keys to the MIT keyserver pgp.mit.edu
+
+## Generating a revocation certificate
+A revocation certificate is a certificate that allows you to revoke a public keyon a server without knowing the password. It is thus very important that the certificate is backed up and stored offline.
+```
+gpg --output revocation-certificate.asc --gen-revoke keyID
+```
+
