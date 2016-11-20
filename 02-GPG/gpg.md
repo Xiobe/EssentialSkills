@@ -121,4 +121,12 @@ A revocation certificate is a certificate that allows you to revoke a public key
 ```
 gpg --output revocation-certificate.asc --gen-revoke keyID
 ```
+## Revoking a key
+```
+gpg --import revocation-certificate.asc
+```
+This revokes the key locally but you still need to make the rest of the world aware.
+```
+gpg --keyserver pgp.mit.edu --send-keys keyID
+```
 
