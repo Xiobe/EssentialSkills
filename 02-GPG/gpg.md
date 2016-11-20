@@ -340,3 +340,8 @@ https://www.mailvelope.com
 
 ## Emailing Attachments
 It is important to realize that attachments need to be signed seperately and uploaded to the web client seperately. The previously discussed mailvelope can do this for Gmail, Yahoo Mail, Outlook.com and GMX.
+
+## Mailvelope Key Server
+If you want to run your own key server that is possible. The key server by mailvelope allows you to address it via a REST API over HTTPS, which means that you can make an application lookup a gpg key and send encrypted messages instead of needing a copy of the key on the server.
+
+https://keys.mailvelope.com
