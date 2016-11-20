@@ -222,3 +222,13 @@ You can specify that the data needs to be compressed
 --compress-algo bzip2
 ```
 If your dqtq is not compressible and you choose none, it can give you approximately a 50% performance increase during the encryption. It is thus recommendable to know this upfront. If the data is compressible you will gain in encryption performance since the amount of data to transfer is smaller.
+
+## Symmetric Encryption
+Symmetric encryption means that you have a pre-shared password. This can be used in cases where you need to exchange data. The password is then shared over an out-of-bad channel for example in person.
+
+In this example we will use the AES256 algorithm:
+```
+gpg --symmetric --cipher-algo AES256 --armor -o file.txt.gpg file.txt
+```
+
+The advantage of symmetric encryption is that anybody can handle the file, the disadvatage is that this means that anybody who can intercept the password can also handle the file. History has shown that the interception of the data/message is trivial and thus the only thing left is the key.
