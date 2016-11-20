@@ -232,3 +232,9 @@ gpg --symmetric --cipher-algo AES256 --armor -o file.txt.gpg file.txt
 ```
 
 The advantage of symmetric encryption is that anybody can handle the file, the disadvatage is that this means that anybody who can intercept the password can also handle the file. History has shown that the interception of the data/message is trivial and thus the only thing left is the key.
+
+## Asymmetric Encryption
+Asymmetric encryption means that only the destinee can read the datam not even the person who encrypted it can if he/she hasn't access to the original data. The main advantage is that thee is no private key exchange required, only the public keys need to be exchanged.
+```
+gpg -e -u SenderPublicKeyID -r ReceiverPublicKeyID -o file.txt.gpg file.txt
+```
