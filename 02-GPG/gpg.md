@@ -110,3 +110,8 @@ gpg --delete-key "user"
 ```
 gpg --delete-secret-key "user"
 ```
+## Upload a key to a keyserver
+```
+gpg --keyserver pgp.mit.edu --send-keys PublicKeyID
+```
+This will send your keys to the MIT keyserver pgp.mit.edu
