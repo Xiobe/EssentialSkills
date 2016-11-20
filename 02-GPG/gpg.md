@@ -192,3 +192,8 @@ Import the key from file
 gpg --import public.key
 ```
 
+## Sign the key
+```
+gpg --sign-key --ask-cert-level PublicKeyID
+```
+
