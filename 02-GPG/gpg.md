@@ -88,3 +88,8 @@ gpg --export -a KeyID > public.key
 ```
 This exports a key to the file public.key.
 
+## Private Key Export
+```
+gpg --export-secret-key -a KeyID > private.key
+```
+This exports your private key. The idea is to exchange your public key and never your private key. Make sure you store a copy of your private key in a safe location.
