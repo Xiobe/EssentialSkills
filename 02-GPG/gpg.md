@@ -213,3 +213,12 @@ To figure out what compression algorithms and encryption ciphers and public key 
 ```
 gpg --version
 ```
+
+## Compression
+You can specify that the data needs to be compressed
+```
+--compress-algo zip
+--compress-algo zlib
+--compress-algo bzip2
+```
+If your dqtq is not compressible and you choose none, it can give you approximately a 50% performance increase during the encryption. It is thus recommendable to know this upfront. If the data is compressible you will gain in encryption performance since the amount of data to transfer is smaller.
