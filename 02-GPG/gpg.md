@@ -245,3 +245,7 @@ gpg -e -u SenderPublicKeyID -r ReceiverPublicKeyID -o file.txt.gpg file.txt
 gpg -o file.txt -d file.txt.gpg
 ```
 This will produce the file file.txt when you introduce the right password.
+## Asymmetric Decryption
+```
+gpg -o file.txt -d file.txt.gpg
+```
