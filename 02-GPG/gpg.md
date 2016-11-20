@@ -249,3 +249,24 @@ This will produce the file file.txt when you introduce the right password.
 ```
 gpg -o file.txt -d file.txt.gpg
 ```
+
+# Signing of Data
+Signing of data is used to prove that you made some piece of work. For example the software packages you produce can be signed. This gives you a way to proof to your users that the software comes from you and isn't altered by another party and for example packed with a piece of malware.
+```
+gpg -s file.txt
+```
+
+The output file is data.gpg, which isn't human readable. IF you want a human readable output you can clearsign.
+```
+gpg --clearsign file.txt
+```
+
+It is absolutely possible to encrypt symmetrically and sign the data
+```
+gpg --symmetric --cipher-algo AES256 --armor --sign -o file.txt.gpg file.txt
+```
+
+It is also possible to encrypt asymmetrically and sign the data
+```
+gpg -e -u SenderPublicKeyID -r ReceiverPublicKeyID --sign -o file.txt.gpg file.txt
+```
