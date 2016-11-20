@@ -332,3 +332,8 @@ The idea is to havea public repository of your public accounts. You have a publi
 You can thus publish your gpg key easily.
 
 https://keybase.io
+
+## Mailvelope
+Mailvelope is a browser plugin for Chrome and Firefox which allows you to use gpg encryption for Gmai, Yahoo Mail, Outlook.com and GMX.
+
+https://www.mailvelope.com
