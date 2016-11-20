@@ -98,3 +98,8 @@ This exports your private key. The idea is to exchange your public key and never
 ```
 gpg --import public.key
 ```
+## Privat Key Import
+```
+gpg --allow-secret-key-import --import private.key
+```
+
