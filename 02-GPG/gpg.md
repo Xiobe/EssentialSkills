@@ -208,3 +208,8 @@ Provide the TheirPublicKey.key file back to the owner.
 ## Armoring the output
 The --armor option we use is to produce ASCII armored (base64 encoded) text. This makes it easier to pass on if you want to sent email via data but there is not a reason if you send data over a protocol like scp, sftp or ftp because these protocols are designed to transfer data.
 
+## Version
+To figure out what compression algorithms and encryption ciphers and public key types are available you can do
+```
+gpg --version
+```
