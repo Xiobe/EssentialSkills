@@ -22,6 +22,13 @@ The git tracked directory is called a repository. Your repository consists of th
 
 To put it simple, you work with your files in the working directory. Once you are happy with the change, you add the files to the index and when you are ready to share it you can commit it to the HEAD.
 
+## File Management
+### git rm
+Once a file is in a git repo, you shouldn't delete the file straight away. If you want to delete the file you should use git rm.
+```
+git rm file.txt
+```
+
 ## git commit
 A git commit is the final step of tracking. As you can see in the message underneath a commit has an identification ID, which is an MD5 hash, an author, a timestamp and a message.
 ```
