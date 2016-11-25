@@ -28,6 +28,11 @@ Once a file is in a git repo, you shouldn't delete the file straight away. If yo
 ```
 git rm file.txt
 ```
+### git mv
+Once a file is in a git repo, you shouldn't rename or move the file straight away. If you want to rename or move the file you should use git mv.
+```
+git mv orig.txt renamed.txt
+```
 
 ## git commit
 A git commit is the final step of tracking. As you can see in the message underneath a commit has an identification ID, which is an MD5 hash, an author, a timestamp and a message.
