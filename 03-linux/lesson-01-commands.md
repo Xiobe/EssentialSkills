@@ -4,5 +4,16 @@ As mentioned in the previous lesson, when you log into a Linux system the progra
 ```
 user@host ~$ whoami
 ```
+When you type ```whoami``` at your prompt you will be returned with the name of your login.
 
-When you type whoami at your prompt you will be returned with the name of your login.
+# date
+```
+user@host ~$ date
+```
+When you type ```date``` at your prompt you will be returned with the current date. The output has
+* day of the week
+* month
+* number of the day for that month
+* time stamp
+* time zone
+* year
