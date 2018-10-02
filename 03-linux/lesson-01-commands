@@ -1,0 +1,8 @@
+# Working with commands
+As mentioned in the previous lesson, when you log into a Linux system the program that is started is called a shell. It allows you to interact with the system via the command line. In this lesson we will see a number of basic commands to get a feel of working with the command line.
+# whoami
+```
+user@host ~$ whoami
+```
+
+When you type whoami at your prompt you will be returned with the name of your login.
