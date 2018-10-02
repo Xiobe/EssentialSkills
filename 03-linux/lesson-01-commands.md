@@ -17,3 +17,8 @@ When you type ```date``` at your prompt you will be returned with the current da
 * time stamp
 * time zone
 * year
+# cal
+```
+user@host ~$ cal
+```
+```cal``` shows you a table view representation of the calendar for the current month.
