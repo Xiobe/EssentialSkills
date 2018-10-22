@@ -10,7 +10,7 @@ Each field has a significance. Let's break it down.
 ## The user name
 The user name is the first field, in our example above we have the user name root.
 ## Password
-When there is a password for the user there will be an x. The password is kept as a hash (a one-way mathematical function) in a different file.
+When there is a password for the user there will be an x. The password is kept as a hash (a one-way mathematical function) in a different file called ```/etc/shadow```.
 ## The user ID
 The user ID is a number the user gets when the user is created. The user is thus identified by the user ID and not the user name.
 ## The group ID
