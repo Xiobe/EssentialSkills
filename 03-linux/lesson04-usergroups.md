@@ -25,4 +25,6 @@ The last field is the mapping between the user and the group.
 # Primary group and secondary groups.
 A common tactic is to make all users member of one group and then assign them to distinct groups. That common shared group is called the primary group and basically can get access to the users their own files. 
 
-The secondary group is to grant access to shared resources on the system. For example if you are member of the accounting you will get access to the accounting files through the accounting group and will not have access to the shared files of the marketing group.
+The secondary group is to grant access to shared resources on the system. 
+
+For example if you are member of the accounting you will get access to the accounting files through the accounting group and will not have access to the shared files of the marketing group.
